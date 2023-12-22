@@ -1,0 +1,8 @@
+number   =  { ASCII_DIGIT+ }
+WS       = _{ " " | "\t" }
+NL       = _{ "\n" | "\r" }
+alpha    =  { '0'..'9' }
+hand     =  { (alpha | "T" | "J" | "Q" | "K" | "A"){5} }
+bid      =  { number }
+hand_bid =  { hand ~ WS ~ bid }
+hands    =  { (hand_bid ~ NL)* ~ hand_bid }

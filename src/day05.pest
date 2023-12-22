@@ -1,0 +1,8 @@
+num         =  { ASCII_DIGIT+ }
+WS          = _{ " " | "\t" }
+WS_NS       = _{ " " | "\t" | "\n" }
+string      = _{ (ASCII_ALPHANUMERIC | "-")+ }
+seeds       =  { "seeds:" ~ WS+ ~ (num ~ WS+)+ ~ num }
+range_tuple =  { num ~ WS+ ~ num ~ WS+ ~ num }
+map         =  { string ~ " map:" ~ WS_NS+ ~ ((num ~ WS+)+ ~ num ~ WS_NS)+ }
+almanac     =  { seeds ~ WS_NS+ ~ (map ~ WS_NS+)+ ~ map }

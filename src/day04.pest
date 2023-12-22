@@ -1,0 +1,5 @@
+num             =  { ASCII_DIGIT+ }
+WS              = _{ " " | "\t" }
+winning_numbers =  { (num ~ WS+)+ }
+have_numbers    =  { (num ~ WS+)+ ~ num }
+card            =  { "Card" ~ WS+ ~ num ~ ":" ~ WS+ ~ winning_numbers ~ "|" ~ WS+ ~ have_numbers }

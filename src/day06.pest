@@ -1,0 +1,6 @@
+number   =  { ASCII_DIGIT+ }
+time     =  { "Time:" ~ WS+ ~ (number ~ WS+)* ~ number }
+distance =  { "Distance:" ~ WS+ ~ (number ~ WS+)* ~ number }
+WS       = _{ " " | "\t" }
+NL       = _{ "\n" | "\r" }
+tableA   =  { time ~ NL ~ distance }

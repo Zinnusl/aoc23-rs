@@ -1,0 +1,5 @@
+num = {ASCII_DIGIT+}
+color = {"red" | "green" | "blue"}
+color_pair = {num ~ " " ~ color}
+draw = { (color_pair ~ ", ")* ~ color_pair }
+game = {"Game " ~ num ~ ": " ~ (draw ~ "; ")* ~ draw}

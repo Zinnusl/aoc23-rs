@@ -1,0 +1,58 @@
+[package]
+name = "aoc23"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "aoc23_day01"
+path = "src/day01.rs"
+
+[[bin]]
+name = "aoc23_day02"
+path = "src/day02.rs"
+
+[[bin]]
+name = "aoc23_day03"
+path = "src/day03.rs"
+
+[[bin]]
+name = "aoc23_day04"
+path = "src/day04.rs"
+
+[[bin]]
+name = "aoc23_day05"
+path = "src/day05.rs"
+
+[[bin]]
+name = "aoc23_day06"
+path = "src/day06.rs"
+
+[[bin]]
+name = "aoc23_day07"
+path = "src/day07.rs"
+
+[[bin]]
+name = "aoc23_day08"
+path = "src/day08.rs"
+
+[[bin]]
+name = "aoc23_day09"
+path = "src/day09.rs"
+
+[[bin]]
+name = "aoc23_day10"
+path = "src/day10.rs"
+
+
+
+[dependencies]
+rayon = "*"
+anyhow = "*"
+pest = "*"
+pest_derive = "*"
+onig = "*"
+contracts = "*"
+indicatif = "*"
+nom = "7.1.3"
+itertools = "0.12.0"
+num = "0.4.1"
